@@ -10,9 +10,8 @@ This is an open-source project, don't hessitate to enrich the open-source commun
 
 ### run:
 ``` python
+python manage.py make migrations
+python manage.py migrate
 python manage.py runserver
 
-### migrtate:
-``` python
-python manage.py make migrations
-python  manage.py migrate
+
