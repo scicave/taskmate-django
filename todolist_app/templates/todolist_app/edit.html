@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block title %} edit-taskmate {% endblock title %} {% block content %}
+
+
+<br> {% if task_obj.manage == request.user %}
+
+<form method="POST" class="row">
+    {% csrf_token%}
+
+    <input type="text" class="form-control col-lg-6" placeholder="{{task_obj.task}}" name='task' value="{{task_obj.task}}">
+    <input type="hidden" name='done' value="{{task_obj.task}}">
+
+    <button type="submit" class="btn btn-primary col-lg-2">Update task</button>
+</form>
+{% else %}
+<p>Access restricted,You are Not Alllowed to access this page</p>
+{% endif %} {% endblock content %}
