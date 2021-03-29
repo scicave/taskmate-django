@@ -45,7 +45,7 @@ psycopg2==2.8.5
 ptyprocess==0.6.0
 py==1.8.1
 pycodestyle==2.5.0
-Pygments==2.6.1
+Pygments==2.7.4
 pylint==2.4.4
 pyparsing==2.4.6
 pypiwin32==223
